@@ -1,2 +1,4 @@
 # SR-datasets
 Collection of public datasets formatted as uniform .csv files for Symbolic Regression (SR) problems.
+
+Each .zip contains a folder named as the dataset. This folder contains several random train-test splits of the dataset (with index starting from 1). The names are formatted as train<seedIndex>.csv and test<seedIndex>.csv. Each .csv file is a comma-separated file whose header contains the indexes of the variables of the dataset along with the target (i.e., the ground-truth). So, for instance, if the dataset has 5 variables, then a given .csv file belonging to that dataset is a 6-columns comma-separated .csv file whose header is "0,1,2,3,4,target", with the last column "target" containing the ground-truth (i.e., the exact value to predict and approximate) and the first 5 columns containing the variables/attributes that can be employed by a regression model.
